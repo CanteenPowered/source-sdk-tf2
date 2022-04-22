@@ -101,7 +101,6 @@ add_library(tier1 STATIC
     "${CMAKE_CURRENT_LIST_DIR}/tier1/strtools.cpp"
     "${CMAKE_CURRENT_LIST_DIR}/tier1/strtools_unicode.cpp"
     "${CMAKE_CURRENT_LIST_DIR}/tier1/reliabletimer.cpp"
-    "${CMAKE_CURRENT_LIST_DIR}/tier1/undiff.cpp"
     "${CMAKE_CURRENT_LIST_DIR}/tier1/processor_detect.cpp"
     "${CMAKE_CURRENT_LIST_DIR}/tier1/utlbuffer.cpp"
     "${CMAKE_CURRENT_LIST_DIR}/tier1/newbitbuf.cpp"
