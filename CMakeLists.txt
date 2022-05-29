@@ -120,3 +120,13 @@ if(UNIX AND NOT APPLE)
     )
 endif()
 target_link_libraries(tier1 PUBLIC source_sdk_meta)
+
+#
+# Vstdlib
+# No sources are provided, but we need it
+#
+add_library(vstdlib INTERFACE)
+find_library(SOURCE_SDK_VSTDLIB vstdlib vstdlib.lib REQUIRED PATHS
+    "${CMAKE_CURRENT_LIST_DIR}/vstdlib"
+)
+target_link_libraries(vstdlib INTERFACE "${SOURCE_SDK_VSTDLIB}")
