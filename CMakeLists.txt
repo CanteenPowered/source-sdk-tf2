@@ -120,6 +120,7 @@ if(UNIX AND NOT APPLE)
     )
 endif()
 target_link_libraries(tier1 PUBLIC source_sdk_meta)
+set_property(TARGET tier1 PROPERTY CXX_STANDARD 11)
 
 #
 # Vstdlib
